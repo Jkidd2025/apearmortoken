@@ -14,7 +14,7 @@ const {
 const { Metaplex } = require('@metaplex-foundation/js');
 
 // Helius RPC URL
-const HELIUS_RPC_URL = `https://mainnet.helius-rpc.com/?api-key=ddfb0573-3e2f-4f26-9331-ee493de86063`;
+const HELIUS_RPC_URL = `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}`;
 
 async function createToken() {
     try {
