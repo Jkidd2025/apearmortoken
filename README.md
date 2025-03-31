@@ -1,47 +1,119 @@
 # ApeArmor Token
 
-This repository contains the code for creating and managing the ApeArmor Token on the Solana blockchain.
+> Ape in with Confidence Armor Up Against Crypto Chaos!
 
-## Setup Instructions
+A Solana SPL token implementation for ApeArmor, built using Solana web3.js and Metaplex standards.
 
-1. Install dependencies:
+## Features
+
+- SPL Token on Solana Mainnet
+- 1 billion total supply
+- 9 decimals precision
+- Metaplex metadata integration
+- Secure key management
+- Built with Helius RPC
+
+## Prerequisites
+
+- Node.js >= 16.0.0
+- npm
+- Solana CLI (optional)
+- A Helius API key
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Jkidd2025/apearmortoken.git
+cd apearmortoken
+```
+
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Add your logo image to the `assets` directory (recommended size: 512x512 pixels)
-
-3. Update the metadata.json file with your token's specific information:
-
-   - Update the image URL after uploading your logo
-   - Add your external URL if applicable
-   - Update the creator address with your wallet address
-
-4. Run the token creation script:
+3. Set up your environment variables:
 
 ```bash
-npm start
+# Create .env file with your Helius API key and wallet keys
+HELIUS_API_KEY=your_helius_api_key
+PUBLIC_KEY=your_public_key
+PRIVATE_KEY=your_private_key
+```
+
+## Usage
+
+### Test Connection
+
+```bash
+npm run test-connection
+```
+
+### Check Wallet Balance
+
+```bash
+npm run check-balance
+```
+
+### Generate New Keys
+
+```bash
+npm run generate-keys
+```
+
+### Create Token
+
+```bash
+npm run create
+```
+
+### Network Selection
+
+- For mainnet:
+
+```bash
+npm run mainnet
+```
+
+- For devnet:
+
+```bash
+npm run devnet
 ```
 
 ## Token Specifications
 
-- Name: ApeArmor Token
-- Symbol: APE
-- Decimals: 9
-- Total Supply: 1,000,000,000
-- Network: Solana Mainnet
-- RPC Provider: Helius
-
-## Important Notes
-
-- Make sure you have enough SOL in your wallet for transaction fees
-- The script will generate a new wallet keypair for the token creation
-- Save the mint address and token account address that are displayed after running the script
-- The token metadata will be created using Metaplex
+- **Name**: ApeArmor Token
+- **Symbol**: APE
+- **Decimals**: 9
+- **Total Supply**: 1,000,000,000
+- **Network**: Solana Mainnet
+- **RPC Provider**: Helius
 
 ## Security
 
-- Never share your private keys
-- Keep your wallet secure
-- Verify all transactions before confirming
+- Private keys are stored securely in .env file
+- Environment variables for sensitive data
+- Proper error handling and validation
+- Transaction confirmation checks
+- Balance verification before operations
+
+## Development
+
+The project uses several key dependencies:
+
+- @solana/web3.js
+- @solana/spl-token
+- @metaplex-foundation/mpl-token-metadata
+- dotenv for environment management
+
+## License
+
+MIT License
+
+## Contact
+
+For support or inquiries, please open an issue in the GitHub repository.
