@@ -66,7 +66,7 @@ async function createToken() {
             name: "ApeArmor Token",
             symbol: "APE",
             description: "ApeArmor Token on Solana",
-            image: "https://arweave.net/your-image-url", // Replace with your actual image URL
+            image: "https://raw.githubusercontent.com/Jkidd2025/apearmortoken/main/assets/ApeArmor_side_logo.png",
             attributes: [
                 {
                     trait_type: "Category",
