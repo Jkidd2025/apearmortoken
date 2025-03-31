@@ -22,6 +22,11 @@ const HELIUS_RPC_URL = `https://mainnet.helius-rpc.com/?api-key=${process.env.HE
 // Minimum SOL required for operations (in lamports)
 const MIN_SOL_REQUIRED = 0.1 * LAMPORTS_PER_SOL;
 
+// Create keypair from environment variables
+const payer = Keypair.fromSecretKey(
+    Buffer.from(process.env.PRIVATE_KEY, 'hex')
+);
+
 async function checkBalance(connection, publicKey) {
     const balance = await connection.getBalance(publicKey);
     if (balance < MIN_SOL_REQUIRED) {
@@ -43,9 +48,6 @@ async function createToken() {
     try {
         // Connect to Solana mainnet using Helius RPC
         const connection = new Connection(HELIUS_RPC_URL, 'confirmed');
-        
-        // Generate a new wallet keypair
-        const payer = Keypair.generate();
         
         // Check if we have enough SOL
         await checkBalance(connection, payer.publicKey);
@@ -96,7 +98,7 @@ async function createToken() {
         const metadata = {
             name: "ApeArmor Token",
             symbol: "APE",
-            description: "ApeArmor Token on Solana",
+            description: "Ape in with Confidence Armor Up Against Crypto Chaos!",
             image: "https://raw.githubusercontent.com/Jkidd2025/apearmortoken/main/assets/ApeArmor_side_logo.png",
             attributes: [
                 {
