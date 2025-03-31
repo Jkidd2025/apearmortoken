@@ -1,0 +1,28 @@
+{
+    "name": "ApeArmor Token",
+    "symbol": "APE",
+    "description": "ApeArmor Token on Solana",
+    "image": "https://arweave.net/your-image-url",
+    "external_url": "",
+    "attributes": [
+        {
+            "trait_type": "Category",
+            "value": "Token"
+        }
+    ],
+    "properties": {
+        "files": [
+            {
+                "uri": "https://arweave.net/your-image-url",
+                "type": "image/png"
+            }
+        ],
+        "category": "image",
+        "creators": [
+            {
+                "address": "",
+                "share": 100
+            }
+        ]
+    }
+} 
