@@ -3,11 +3,27 @@
     "symbol": "APE",
     "description": "Ape in with Confidence Armor Up Against Crypto Chaos!",
     "image": "https://raw.githubusercontent.com/Jkidd2025/apearmortoken/main/assets/ApeArmor_side_logo.png",
-    "external_url": "",
+    "external_url": "https://github.com/Jkidd2025/apearmortoken",
     "attributes": [
         {
             "trait_type": "Category",
             "value": "Token"
+        },
+        {
+            "trait_type": "Type",
+            "value": "Fungible Token"
+        },
+        {
+            "trait_type": "Network",
+            "value": "Solana"
+        },
+        {
+            "trait_type": "Decimals",
+            "value": "9"
+        },
+        {
+            "trait_type": "Total Supply",
+            "value": "1,000,000,000"
         }
     ],
     "properties": {
@@ -17,10 +33,10 @@
                 "type": "image/png"
             }
         ],
-        "category": "image",
+        "category": "fungible",
         "creators": [
             {
-                "address": "",
+                "address": "FGECTAbTxbbszardzru1f5ueD6VJ74b1o6FM1VYa8WHp",
                 "share": 100
             }
         ]
