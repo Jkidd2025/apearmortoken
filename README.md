@@ -1,8 +1,8 @@
-# ApeArmor Token
+# Ape Armor
 
 > Ape in with Confidence Armor Up Against Crypto Chaos!
 
-A Solana SPL token implementation for ApeArmor, built using Solana web3.js and Metaplex standards.
+A Solana SPL token implementation for Ape Armor, built using Solana web3.js and Metaplex standards.
 
 ## Features
 
@@ -86,7 +86,7 @@ npm run devnet
 
 ## Token Specifications
 
-- **Name**: ApeArmor Token
+- **Name**: Ape Armor
 - **Symbol**: APE
 - **Decimals**: 9
 - **Total Supply**: 1,000,000,000
